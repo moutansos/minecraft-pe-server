@@ -10,7 +10,7 @@ RUN apk add ca-certificates openssl openjdk8
 RUN update-ca-certificates
 
 #Download minecraft
-RUN wget -O /srv/minecraft-pe-server.jar nukkit-1.0-SNAPSHOT.jar
+RUN wget -O /srv/minecraft-pe-server.jar http://ci.mengcraft.com:8080/job/nukkit/lastStableBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar
 
 #Open the necessary port
 EXPOSE 25565
